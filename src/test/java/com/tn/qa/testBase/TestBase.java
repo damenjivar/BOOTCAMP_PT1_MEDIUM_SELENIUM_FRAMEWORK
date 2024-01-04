@@ -39,7 +39,7 @@ public class TestBase {
 		if (browserName.equals(prop.getProperty("browser"))) {
 			options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			options.addArguments("start-maximized");
+			options.addArguments("--start-maximized");
 			options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
 		} else if (browserName.equals("Firefox")) {
